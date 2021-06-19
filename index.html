@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="toggleModal()">Open</button>
+    <div class="modal" id="modal">
+        <div class="modal-header"><h1>Lorem, ipsum dolor. </h1><button class="close-button" onclick="toggleModal()">&times;</button></div>
+        <form id="new-book">
+            <label for="title" class="title">Title</label>
+            <br>
+            <input type="text" name = "title" id = "title">
+            <br>
+            <label for="author" class = "author">Author</label>
+            <br>
+            <input type="text" name = "author">
+            <br><label><input type="checkbox" id="cbox1" value="first_checkbox"> I've already read this book</label><br>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>
